@@ -1,0 +1,122 @@
+---
+name: Feature Request
+description: Suggest a feature
+title: "[Feature]: "
+labels: ["type: feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request!
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - "priority: low"
+        - "priority: medium"
+        - "priority: high"
+    validations:
+      required: true
+  - type: input
+    id: user-story
+    attributes:
+      label: User story
+      description: As a [user description], I want [desired action] so that [desired outcome].
+      placeholder: As a [user description], I want [desired action] so that [desired outcome].
+    validations:
+      required: true
+  - type: input
+    id: game
+    attributes:
+      label: Game
+      description: What game server are you hosting?
+      placeholder: Valheim
+    validations:
+      required: false
+  - type: dropdown
+    id: distro
+    attributes:
+      label: Linux distro
+      multiple: true
+      options:
+        - Ubuntu 26.04
+        - Ubuntu 24.04
+        - Ubuntu 22.04
+        - Ubuntu 20.04
+        - Debian 13
+        - Debian 12
+        - Debian 11
+        - AlmaLinux 9
+        - AlmaLinux 8
+        - Rocky 10
+        - Rocky 9
+        - Rocky 8
+        - RedHat 9
+        - RedHat 8
+        - Other
+    validations:
+      required: false
+  - type: dropdown
+    id: command
+    attributes:
+      label: Command
+      multiple: true
+      options:
+        - "command: start"
+        - "command: stop"
+        - "command: restart"
+        - "command: monitor"
+        - "command: details"
+        - "command: update"
+        - "command: validate"
+        - "command: backup"
+        - "command: mods-install"
+        - "command: mods-update"
+        - "command: mods-remove"
+        - "command: debug"
+        - "command: console"
+        - "command: install"
+        - "command: auto-update"
+        - "command: update-lgsm"
+        - "command: wipe"
+        - "command: send"
+    validations:
+      required: false
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: Problem statement
+      description: What is painful today, and why is this needed?
+      placeholder: Describe the current limitation or pain point.
+    validations:
+      required: true
+  - type: dropdown
+    id: scope-impact
+    attributes:
+      label: Scope and impact
+      description: Which area would this change impact?
+      options:
+        - "scope: single game"
+        - "scope: multiple games"
+        - "scope: all servers"
+        - "scope: documentation only"
+        - "scope: ci/cd or automation"
+        - "scope: other"
+    validations:
+      required: true
+  - type: textarea
+    id: further-info
+    attributes:
+      label: Further information
+      description: A clear description of the proposed solution and any implementation ideas.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe alternatives or workarounds you considered.
+    validations:
+      required: false

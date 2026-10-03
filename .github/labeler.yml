@@ -1,0 +1,134 @@
+"command: backup":
+  - "/(command:\\s*backup)/i"
+"command: console":
+  - "/(command:\\s*console)/i"
+"command: debug":
+  - "/(command: debug)/i"
+"command: details":
+  - "/(command: details)/i"
+"command: fast-dl":
+  - "/(command:\\s*fast-?dl)/i"
+"command: install":
+  - "/(command:\\s*install)/i"
+"command: mods":
+  - "/(command:\\s*mods(?:-install|-update|-remove)?)/i"
+"command: monitor":
+  - "/(command: monitor)/i"
+"command: post-details":
+  - "/(command: post-details)/i"
+"command: restart":
+  - "/(command: restart)/i"
+"command: send":
+  - "/(command: send)/i"
+"command: skeleton":
+  - "/(command: skeleton)/i"
+"command: start":
+  - "/(command: start)/i"
+"command: stop":
+  - "/(command: stop)/i"
+"command: update-lgsm":
+  - "/(command:\\s*update-lgsm)/i"
+"command: update":
+  - "/(command:\\s*update(?!-lgsm)\\b)/i"
+"command: validate":
+  - "/(command:\\s*validate)/i"
+"command: wipe":
+  - "/(command:\\s*wipe)/i"
+
+# Distros
+"distro: AlmaLinux":
+  - "/\\bAlmaLinux(?:\\s+\\d+)?\\b/i"
+"distro: Arch Linux":
+  - "/\\bArch Linux\\b/i"
+"distro: CentOS":
+  - "/\\bCentOS(?:\\s+\\d+)?\\b/i"
+"distro: Debian":
+  - "/\\bDebian(?:\\s+\\d+)?\\b/i"
+"distro: Fedora":
+  - "/\\bFedora(?:\\s+\\d+)?\\b/i"
+"distro: openSUSE":
+  - "/\\bopenSUSE\\b/i"
+"distro: Rocky Linux":
+  - "/\\bRocky(?:\\s+Linux)?(?:\\s+\\d+)?\\b/i"
+"distro: Slackware":
+  - "/\\bSlackware(?:\\s+\\d+)?\\b/i"
+"distro: Ubuntu":
+  - "/\\bUbuntu(?:\\s+\\d+(?:\\.\\d+)?)?\\b/i"
+
+# Info
+"info: alerts":
+  - "/(alert_(discord|email|gotify|ifttt|ntfy|pushbullet|pushover|rocketchat|slack|telegram)|command:\\s*test-alert)/i"
+"info: dependency":
+  - "/\\b(dependency|dependencies|deps)\\b/i"
+"info: docker":
+  - "/\\bdocker\\b/i"
+"info: docs":
+  - "/(^docs$)/i"
+"info: email":
+  - "/\\b(postfix|sendmail|exim|smtp)\\b/i"
+"info: query":
+  - "/\\b(gamedig|gsquery)\\b/i"
+"info: steamcmd":
+  - "/\\bsteamcmd\\b/i"
+"info: systemd":
+  - "/\\bsystemd\\b/i"
+"info: tmux":
+  - "/(tmuxception|check_tmuxception)/i"
+"info: website":
+  - "/\\bwebsite\\b/i"
+
+# Type
+"type: game server request":
+  - "/(^\\[server request\\]|^server request:|type:\\s*game server request)/im"
+"type: bug":
+  - "/(\\[bug\\]|bug report|type: bug)/i"
+"type: bugfix":
+  - "/(^fix(\\(.+\\))?:|\\[x\\] Bug fix)/im"
+"type: feature":
+  - "/(feature request|new feature|^feat(\\(.+\\))?:|\\[x\\] New feature)/im"
+"type: docs":
+  - "/(^docs(\\(.+\\))?:|documentation|\\[x\\] Comment update)/im"
+"type: refactor":
+  - "/(^refactor(\\(.+\\))?:|\\[x\\] Refactor)/im"
+"type: chore":
+  - "/(^chore(\\(.+\\))?:|^ci(\\(.+\\))?:)/im"
+
+# Severity (bug reports)
+"severity: low":
+  - "/(severity: low)/i"
+"severity: medium":
+  - "/(severity: medium)/i"
+"severity: high":
+  - "/(severity: high)/i"
+"severity: critical":
+  - "/(severity: critical)/i"
+
+# Reproducibility (bug reports)
+"reproducible: always":
+  - "/(reproducible: always)/i"
+"reproducible: sometimes":
+  - "/(reproducible: sometimes)/i"
+"reproducible: unable":
+  - "/(reproducible: unable)/i"
+
+# Regression (bug reports)
+"regression: yes":
+  - "/(regression: yes)/i"
+
+# Priority (feature requests)
+"priority: low":
+  - "/(priority: low)/i"
+"priority: medium":
+  - "/(priority: medium)/i"
+"priority: high":
+  - "/(priority: high)/i"
+
+# Scope (feature requests)
+"scope: single game":
+  - "/(scope: single game)/i"
+"scope: multiple games":
+  - "/(scope: multiple games)/i"
+"scope: all servers":
+  - "/(scope: all servers)/i"
+"scope: documentation":
+  - "/(scope: documentation|scope: documentation only)/i"
